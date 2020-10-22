@@ -1,6 +1,7 @@
 public class Dolar {
-    int cantidad = 5;
+    int cantidad;
 
     public Dolar(int cantidad) {
+        this.cantidad = cantidad;
     }
 }

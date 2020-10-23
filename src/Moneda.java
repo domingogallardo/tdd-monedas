@@ -8,11 +8,11 @@ public class Moneda {
     }
 
     static Moneda dolar(int cantidad) {
-        return new Dolar(cantidad, "USD");
+        return new Moneda(cantidad, "USD");
     }
 
     static Moneda euro(int cantidad) {
-        return new Euro(cantidad, "EUR");
+        return new Moneda(cantidad, "EUR");
     }
 
     public Moneda multiplicadoPor(int multiplicador) {

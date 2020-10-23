@@ -4,7 +4,7 @@ public class Dolar extends Moneda {
         this.cantidad = cantidad;
     }
 
-    public Dolar multiplicadoPor(int multiplicador) {
+    public Moneda multiplicadoPor(int multiplicador) {
         return new Dolar(cantidad * multiplicador);
     }
 }

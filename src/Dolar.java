@@ -1,5 +1,5 @@
 public class Dolar {
-    int cantidad;
+    private int cantidad;
 
     public Dolar(int cantidad) {
         this.cantidad = cantidad;

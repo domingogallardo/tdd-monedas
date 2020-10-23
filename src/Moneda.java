@@ -2,6 +2,11 @@ abstract public class Moneda {
     protected int cantidad;
     protected String denominacion;
 
+    public Moneda(int cantidad, String denominacion) {
+        this.cantidad = cantidad;
+        this.denominacion = denominacion;
+    }
+
     static Moneda dolar(int cantidad) {
         return new Dolar(cantidad, "USD");
     }

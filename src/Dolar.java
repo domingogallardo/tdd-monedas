@@ -1,8 +1,7 @@
 public class Dolar extends Moneda {
 
     public Dolar(int cantidad, String denominacion) {
-        this.cantidad = cantidad;
-        this.denominacion = denominacion;
+        super(cantidad, denominacion);
     }
 
     public Moneda multiplicadoPor(int multiplicador) {

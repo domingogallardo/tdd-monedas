@@ -3,6 +3,7 @@ public class Moneda {
 
     public boolean equals(Object object) {
         Moneda moneda = (Moneda) object;
-        return cantidad == moneda.cantidad;
+        return cantidad == moneda.cantidad &&
+                this.getClass() == moneda.getClass();
     }
 }

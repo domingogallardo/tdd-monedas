@@ -26,8 +26,8 @@ public class TestMonedas {
 
     @Test
     public void testMultiplicacionEuro() {
-        Euro cinco = new Euro(5);
-        assertEquals(new Euro(10), cinco.multiplicadoPor(2));
-        assertEquals(new Euro(15), cinco.multiplicadoPor(3));
+        Moneda cinco = Moneda.euro(5);
+        assertEquals(Moneda.euro(10), cinco.multiplicadoPor(2));
+        assertEquals(Moneda.euro(15), cinco.multiplicadoPor(3));
     }
 }

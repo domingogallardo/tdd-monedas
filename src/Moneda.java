@@ -5,6 +5,10 @@ abstract public class Moneda {
         return new Dolar(cantidad);
     }
 
+    static Moneda euro(int cantidad) {
+        return new Euro(cantidad);
+    }
+
     public abstract Moneda multiplicadoPor(int multiplicador);
 
     public boolean equals(Object object) {

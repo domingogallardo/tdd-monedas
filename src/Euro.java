@@ -4,6 +4,10 @@ public class Euro extends Moneda {
         this.cantidad = cantidad;
     }
 
+    public String denominacion() {
+        return "EUR";
+    }
+
     public Moneda multiplicadoPor(int multiplicador) {
         return new Euro(cantidad * multiplicador);
     }

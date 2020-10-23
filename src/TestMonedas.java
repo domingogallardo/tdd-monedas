@@ -30,4 +30,11 @@ public class TestMonedas {
         assertEquals(Moneda.euro(10), cinco.multiplicadoPor(2));
         assertEquals(Moneda.euro(15), cinco.multiplicadoPor(3));
     }
+
+    @Test
+    public void testDenominacion() {
+        assertEquals("USD", Moneda.dolar(1).denominacion());
+        assertEquals("EUR", Moneda.euro(1).denominacion());
+    }
+
 }

@@ -4,6 +4,10 @@ public class Dolar extends Moneda {
         this.cantidad = cantidad;
     }
 
+    public String denominacion() {
+        return "USD";
+    }
+
     public Moneda multiplicadoPor(int multiplicador) {
         return new Dolar(cantidad * multiplicador);
     }

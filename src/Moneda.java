@@ -11,6 +11,8 @@ abstract public class Moneda {
 
     public abstract Moneda multiplicadoPor(int multiplicador);
 
+    public abstract String denominacion();
+
     public boolean equals(Object object) {
         Moneda moneda = (Moneda) object;
         return cantidad == moneda.cantidad &&

@@ -3,11 +3,11 @@ abstract public class Moneda {
     protected String denominacion;
 
     static Moneda dolar(int cantidad) {
-        return new Dolar(cantidad);
+        return new Dolar(cantidad, "USD");
     }
 
     static Moneda euro(int cantidad) {
-        return new Euro(cantidad);
+        return new Euro(cantidad, "EUR");
     }
 
     public abstract Moneda multiplicadoPor(int multiplicador);

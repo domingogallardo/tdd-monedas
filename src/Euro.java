@@ -1,11 +1,11 @@
 public class Euro extends Moneda {
 
-    public Euro(int cantidad) {
+    public Euro(int cantidad, String denominacion) {
         this.cantidad = cantidad;
-        this.denominacion = "EUR";
+        this.denominacion = denominacion;
     }
 
     public Moneda multiplicadoPor(int multiplicador) {
-        return new Euro(cantidad * multiplicador);
+        return Moneda.euro(cantidad * multiplicador);
     }
 }

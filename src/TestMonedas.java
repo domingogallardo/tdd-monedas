@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestMonedas {
     @Test
@@ -16,6 +17,11 @@ public class TestMonedas {
         assertEquals(10, resultado.cantidad);
         resultado = cinco.multiplicadoPor(3);
         assertEquals(15, resultado.cantidad);
+    }
+
+    @Test
+    public void testEquals() {
+        assertTrue(new Dolar(5).equals(new Dolar(5)));
     }
 
 }

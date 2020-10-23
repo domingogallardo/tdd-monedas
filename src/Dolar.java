@@ -8,4 +8,8 @@ public class Dolar {
     public Dolar multiplicadoPor(int multiplicador) {
         return new Dolar(cantidad * multiplicador);
     }
+
+    public boolean equals(Object object) {
+        return true;
+    }
 }

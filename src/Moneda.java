@@ -1,5 +1,6 @@
 abstract public class Moneda {
     protected int cantidad;
+    protected String denominacion;
 
     static Moneda dolar(int cantidad) {
         return new Dolar(cantidad);
@@ -11,7 +12,9 @@ abstract public class Moneda {
 
     public abstract Moneda multiplicadoPor(int multiplicador);
 
-    public abstract String denominacion();
+    public String denominacion() {
+        return denominacion;
+    }
 
     public boolean equals(Object object) {
         Moneda moneda = (Moneda) object;

@@ -10,6 +10,7 @@ public class Dolar {
     }
 
     public boolean equals(Object object) {
-        return true;
+        Dolar dolar = (Dolar) object;
+        return cantidad == dolar.cantidad;
     }
 }

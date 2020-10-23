@@ -21,4 +21,10 @@ public class TestMonedas {
         assertFalse(new Dolar(5).equals(new Dolar(6)));
     }
 
+    @Test
+    public void testMultiplicacionEuro() {
+        Euro cinco = new Euro(5);
+        assertEquals(new Euro(10), cinco.multiplicadoPor(2));
+        assertEquals(new Euro(15), cinco.multiplicadoPor(3));
+    }
 }

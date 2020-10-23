@@ -19,8 +19,6 @@ public class TestMonedas {
     public void testEquals() {
         assertTrue(Moneda.dolar(5).equals(Moneda.dolar(5)));
         assertFalse(Moneda.dolar(5).equals(Moneda.dolar(6)));
-        assertTrue(Moneda.euro(5).equals(Moneda.euro(5)));
-        assertFalse(Moneda.euro(5).equals(Moneda.euro(6)));
         assertFalse(Moneda.euro(5).equals(Moneda.dolar(5)));
     }
 

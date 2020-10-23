@@ -10,9 +10,9 @@ public class TestMonedas {
 
     @Test
     public void testMultiplicacion() {
-        Dolar cinco = new Dolar(5);
-        assertEquals(new Dolar(10), cinco.multiplicadoPor(2));
-        assertEquals(new Dolar(15), cinco.multiplicadoPor(3));
+        Dolar cinco = Moneda.dolar(5);
+        assertEquals(Moneda.dolar(10), cinco.multiplicadoPor(2));
+        assertEquals(Moneda.dolar(15), cinco.multiplicadoPor(3));
     }
 
     @Test

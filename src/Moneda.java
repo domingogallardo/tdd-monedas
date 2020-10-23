@@ -1,9 +1,11 @@
-public class Moneda {
+abstract public class Moneda {
     protected int cantidad;
 
-    static Dolar dolar(int cantidad) {
+    static Moneda dolar(int cantidad) {
         return new Dolar(cantidad);
     }
+
+    public abstract Moneda multiplicadoPor(int multiplicador);
 
     public boolean equals(Object object) {
         Moneda moneda = (Moneda) object;

@@ -36,5 +36,4 @@ public class TestMonedas {
         assertEquals("USD", Moneda.dolar(1).denominacion());
         assertEquals("EUR", Moneda.euro(1).denominacion());
     }
-
 }

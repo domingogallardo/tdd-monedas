@@ -5,7 +5,7 @@ public class Dolar {
         this.cantidad = cantidad;
     }
 
-    public void multiplicadoPor(int multiplicador) {
-        this.cantidad *= multiplicador;
+    public Dolar multiplicadoPor(int multiplicador) {
+        return new Dolar(cantidad * multiplicador);
     }
 }
